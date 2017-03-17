@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Basic RTCPeerConnection demo</title>
+        <link href="css/style-basic.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <h1>Basic RTCPeerConnection demo</h1>
+        <p>Creates 2 <code>RTCPeerConnection</code> objects in the same page and sends across media stream from one to the other</p>
+
+        <div class="container">
+            <button id="button-start" disabled>Start call</button>
+            <button id="button-end" disabled>End call</button>
+        </div>
+
+        <div class="container">
+            <div>
+                <h2>Local stream</h2>
+                <video id="video-local" autoplay></video>
+            </div>
+            <div>
+                <h2>Remote stream</h2>
+                <video id="video-remote" autoplay></video>
+            </div>
+        </div>
+
+        <script src="js/peerconnection-basic.js"></script>
+
+    </body>
+
+</html>
