@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Room</title>
+    </head>
+
+    <body>
+        <h1>WebRTC chat room</h1>
+        <p>Share this URL with someone else to join your room.</p>
+        <div id="errors"></div>
+        <div class="video-container">
+            <video id="video-local" autoplay muted></video>
+            <video id="video-remote" autoplay></video>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var room_id = location.pathname.split("/")[2];
+            var socket = io();
+        </script>
+        <script src="/assets/room.js"></script>
+    </body>
+</html>

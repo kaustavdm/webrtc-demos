@@ -1,0 +1,29 @@
+{
+  "name": "simple-webrtc-server",
+  "version": "0.1.0",
+  "description": "Simple WebRTC signaling server that handles only the very basics",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaustavdm/webrtc-demos.git"
+  },
+  "keywords": [
+    "webrtc",
+    "server",
+    "demo"
+  ],
+  "author": "Kaustav Das Modak <kaustav.dasmodak@yahoo.co.in>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/kaustavdm/webrtc-demos/issues"
+  },
+  "homepage": "https://github.com/kaustavdm/webrtc-demos#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
