@@ -8,6 +8,8 @@ var app = express();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 
+const PORT = process.env.PORT || 3000;
+
 let rooms = {};
 
 let create_slug = () => {
@@ -87,6 +89,6 @@ io.on("connection", socket => {
 // -----------------------------
 // Start HTTP server
 // -----------------------------
-http.listen(3000, () => {
-    console.log("Server listening on *:3000");
+http.listen(PORT, () => {
+    console.log("Server listening on port " + PORT);
 });
